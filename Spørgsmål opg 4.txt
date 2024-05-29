@@ -1,0 +1,17 @@
+Beskrivelse af HTTP protokollen:
+- HTTP står for Hypertext Transfer Protocol.
+- Det er en protokol, der bruges til at overføre data (f.eks. HTML-dokumenter, billeder, filer osv.) mellem en klient (f.eks. en webbrowser) og en server over internettet.
+- Det er en stateless protokol, hvilket betyder, at hver anmodning fra klienten til serveren behandles uafhængigt uden nogen forudsætning om tidligere anmodninger.
+
+b. Beskrivelse af relevante HTTP statuskoder:
+- 200 OK: Angiver, at anmodningen er blevet udført succesfuldt.
+- 201 Created: Angiver, at anmodningen om oprettelse af en ny ressource er blevet udført med succes.
+- 400 Bad Request: Angiver, at serveren ikke kan forstå anmodningen på grund af en ugyldig syntaks.
+- 404 Not Found: Angiver, at den anmodede ressource ikke kunne findes på serveren.
+- 500 Internal Server Error: Angiver, at der opstod en fejl på serveren, som forhindrede den i at opfylde anmodningen.
+
+c. Beskrivelse af, hvordan REST bruger HTTP protokollen, herunder CRUD og adressering af resurser:
+- REST (Representational State Transfer) er en arkitektonisk stil, der bruger HTTP-protokollen til at oprette, læse, opdatere og slette (CRUD) dataressourcer.
+- REST bruger de relevante HTTP-metoder (GET, POST, PUT, DELETE) til at udføre de tilsvarende handlinger på ressourcer.
+- Adressering af ressourcer i REST sker ved hjælp af unikke URIs (Uniform Resource Identifiers), der identificerer hver ressource.
+- For eksempel kan en GET-anmodning sendes til http://example.com/api/woodpellets for at få alle træpiller, og en POST-anmodning kan sendes til samme URI for at tilføje en ny træpille.
