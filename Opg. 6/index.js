@@ -12,17 +12,11 @@ Vue.createApp({
         this.getWoodPellets();
     },
     methods: {
-        getWoodPellets() {
-            axios.get(baseUrl)
-                .then(response => {
-                    this.woodPellets = response.data;
-                })
-                .catch(error => {
-                    console.error(error);
-                    this.errorMessage = 'Failed to retrieve Wood Pellets';
-                });
+        async getWoodPellets() {
+            const response = await axios.get(baseUrl);
+            this.woodPellets = await response.data;
         },
-        getWoodPelletById(id) {
+        async getWoodPelletById(id) {
             axios.get(`${baseUrl}/${id}`)
                 .then(response => {
                     this.selectedWoodPellet = response.data;
